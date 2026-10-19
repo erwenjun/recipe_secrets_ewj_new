@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reservations | Recipe Secrets Restaurant</title>
+<meta name="description" content="Request a table at Recipe Secrets Restaurant. Fill out our reservation form to send a prefilled email request, or call us directly.">
+<meta property="og:title" content="Reservations at Recipe Secrets Restaurant">
+<meta property="og:description" content="Request a table by email or phone.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@400;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav-bar" aria-label="Primary">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">R</span>
+      Recipe Secrets
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation menu">
+      <span class="nav-toggle-bar"></span>
+    </button>
+    <ul class="nav-list" id="primary-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="specials.html">Specials</a></li>
+      <li><a href="reservations.html" aria-current="page">Reservations</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Request a Reservation</h1>
+      <p>Tell us a little about your visit and we'll follow up to confirm your table.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-heading" style="margin-bottom:2rem;">
+        <p>We don't yet take bookings directly through this site. Submitting the form below opens a prefilled email to our team in your email app &mdash; it is a <strong>request</strong>, not a confirmed booking. We'll reply to confirm availability.</p>
+      </div>
+
+      <div class="form-card">
+        <form id="reservation-form">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="name">Full name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email address</label>
+              <input type="email" id="email" name="email" autocomplete="email" required>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+            </div>
+            <div class="form-field">
+              <label for="party-size">Party size</label>
+              <input type="number" id="party-size" name="partySize" min="1" max="20" required>
+            </div>
+            <div class="form-field">
+              <label for="date">Preferred date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-field">
+              <label for="time">Preferred time</label>
+              <input type="time" id="time" name="time" required>
+            </div>
+            <div class="form-field full">
+              <label for="notes">Special requests (optional)</label>
+              <textarea id="notes" name="notes" placeholder="Allergies, seating preferences, celebrations, etc."></textarea>
+            </div>
+          </div>
+
+          <p class="form-note" style="margin-top:1.5rem;">
+            Submitting this form will open a new email addressed to <strong>reservations@recipesecrets.example</strong> with your details filled in, using your device's default email app. Nothing is sent automatically, and no table is held until we reply.
+          </p>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Email This Request</button>
+            <a class="btn btn-outline" href="tel:+15551234567">Or Call (555) 123-4567</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="pillar-grid">
+        <div class="pillar">
+          <h3>Large parties</h3>
+          <p>For groups of 8 or more, please call us directly so we can plan seating in advance.</p>
+        </div>
+        <div class="pillar">
+          <h3>Response time</h3>
+          <p>We aim to confirm email requests within one business day. For same-day requests, calling is fastest.</p>
+        </div>
+        <div class="pillar">
+          <h3>Cancellations</h3>
+          <p>Please let us know as early as possible if your plans change, by phone or email.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <p class="footer-brand">Recipe Secrets</p>
+        <p>A warm, modern restaurant serving seasonal, herb-forward dishes made with care.</p>
+      </div>
+      <div>
+        <h3>Explore</h3>
+        <ul class="footer-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="reservations.html">Reservations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul class="footer-list">
+          <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+          <li><a href="mailto:hello@recipesecrets.example">hello@recipesecrets.example</a></li>
+          <li>123 Garden Lane, Rivertown</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <ul class="footer-list">
+          <li>Tue&ndash;Sun: 5:00&ndash;10:00 PM</li>
+          <li>Monday: Closed</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Recipe Secrets Restaurant. Sample content for demonstration purposes.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/reservation.js"></script>
+</body>
+</html>
